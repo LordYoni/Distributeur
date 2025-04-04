@@ -13,8 +13,8 @@ if find ./Raspberry/WebApp -maxdepth 1 -type f ! \( -name "*.html" -o -name "*.p
 fi
 
 # Vérification des fichiers dans "img"
-if find ./Raspberry/WebApp/img -type f ! \( -name "*.png" -o -name "*.jpg" -o -name "*.webp" \) | grep -q .; then
-    echo "Erreur : 'img' ne doit contenir que des fichiers .png, .jpg ou .webp."
+if find ./Raspberry/WebApp/img -type f ! \( -name "*.png" -o -name "*.jpg" -o -name "*.webp" -o -name "*.svg" \) | grep -q .; then
+    echo "Erreur : 'img' ne doit contenir que des fichiers .png, .jpg, .svg ou .webp."
     exit 1
 fi
 
