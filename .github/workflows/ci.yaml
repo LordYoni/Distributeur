@@ -1,0 +1,40 @@
+name: Arduino CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Vérification de la compilation du code Arduino
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Copie du repo
+      uses: actions/checkout@v4
+    
+    - name: Liste des fichiers
+      run: ls -la
+    
+    - name: Arborescence
+      run: tree
+
+    - name: Installer Arduino CLI
+      run: |
+        wget https://github.com/arduino/arduino-cli/releases/download/0.19.0/arduino-cli_0.19.0_Linux_64bit.tar.bz2
+        tar -xvf arduino-cli_0.19.0_Linux_64bit.tar.bz2
+        sudo mv arduino-cli /usr/local/bin
+
+    - name: Configurer Arduino CLI
+      run: |
+        arduino-cli config init
+        arduino-cli core update-index
+        arduino-cli core install arduino:avr
+
+    - name: Vérifier la compilation du code Arduino
+      run: |
+        arduino-cli compile --fqbn arduino:avr:mini Arduino/main/main.ino
