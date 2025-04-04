@@ -56,4 +56,4 @@ jobs:
       run: tree
     
     - name: Vérification de l'arborescence de la WebApp
-      run: source scripts/verif.sh
+      run: source /scripts/verif.sh
