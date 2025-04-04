@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Vérification de l'arborescence
-if [[ ! -d "./Raspberry/WebApp/img" || ! -d "./Raspberry/WebApp/css" || ! -d "./Raspberry/WebApp/js" ]]; then
+if [[ ! -d "./Raspberry/WebApp/img" || ! -d "./Raspberry/WebApp/css" || ! -d "./Raspberry/WebApp/script" ]]; then
     echo "Erreur : L'arborescence du site est incorrecte."
     exit 1
 fi
@@ -24,9 +24,9 @@ if find ./Raspberry/WebApp/css -type f ! -name "*.css" | grep -q .; then
     exit 1
 fi
 
-# Vérification des fichiers dans "js"
-if find ./Raspberry/WebApp/js -type f ! -name "*.js" | grep -q .; then
-    echo "Erreur : 'js' ne doit contenir que des fichiers .js."
+# Vérification des fichiers dans "script"
+if find ./Raspberry/WebApp/script -type f ! -name "*.js" | grep -q .; then
+    echo "Erreur : 'script' ne doit contenir que des fichiers .js."
     exit 1
 fi
 
