@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  Arduino:
     name: Vérification de la compilation du code Arduino
     runs-on: ubuntu-latest
 
