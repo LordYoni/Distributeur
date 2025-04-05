@@ -56,4 +56,21 @@ jobs:
       run: tree
     
     - name: Vérification de l'arborescence de la WebApp
-      run: source ./scripts/verif.sh
+      run: source ./scripts/verif.sh ./Raspberry/WebApp
+  
+  AdminApp:
+    name: Vérification de l'arborescence de la AdminApp
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Copie du repo
+      uses: actions/checkout@v4
+    
+    - name: Liste des fichiers
+      run: ls -la
+    
+    - name: Arborescence
+      run: tree
+    
+    - name: Vérification de l'arborescence de la AdminApp
+      run: source ./scripts/verif.sh ./Raspberry/AdminApp

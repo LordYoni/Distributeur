@@ -24,7 +24,7 @@ sudo systemctl restart dhcpcd
 cat <<EOL | sudo tee /etc/hostapd/hostapd.conf
 interface=wlan0
 driver=nl80211
-ssid=RaspberryPi-Hotspot
+ssid=Distributeur
 hw_mode=g
 channel=6
 auth_algs=1
