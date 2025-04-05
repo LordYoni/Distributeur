@@ -53,7 +53,7 @@ jobs:
       run: ls -la
     
     - name: Arborescence
-      run: tree
+      run: tree ./Raspberry/WebApp
     
     - name: Vérification de l'arborescence de la WebApp
       run: source ./scripts/verif.sh ./Raspberry/WebApp
@@ -70,7 +70,7 @@ jobs:
       run: ls -la
     
     - name: Arborescence
-      run: tree
+      run: tree ./Raspberry/AdminApp
     
     - name: Vérification de l'arborescence de la AdminApp
       run: source ./scripts/verif.sh ./Raspberry/AdminApp
