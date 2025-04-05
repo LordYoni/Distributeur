@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #efefef;
+  background-color: #F8F9FA;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
@@ -31,16 +31,16 @@ body {
   align-items: center;
   font-size: 40px;
   font-weight: 700;
-  color: #003049;
+  color: #2B2D42;
   text-align: center;
 }
 
 .boisson {
-  background-color: #780000;
+  background-color: #FFAFCC;
 }
 
 .cocktail {
-  background-color: #fdf0d5;
+  background-color: #BDE0FE;
 }
 
 /* Content */
@@ -79,15 +79,15 @@ body {
 .card p {
   font-size: 32px;
   font-weight: 275;
-  color: #003049;
+  color: #2B2D42;
 }
 
 .card.red {
-  background-color: rgba(120, 0, 0, 0.6);
+  background-color: rgba(255, 175, 204, 0.6);
 }
 
 .card.beige {
-  background-color: rgba(253, 240, 213, 0.6);
+  background-color: rgba(189, 224, 254, 0.6);
 }
 
 /* Responsive tablette de base (1280x800) */
