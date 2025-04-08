@@ -32,7 +32,7 @@ Fonctionnalités de l’interface :
 
 ## 🔌 Communication Arduino <-> Raspberry Pi 3
 
-Le **Raspberry Pi 3** communique avec l’**Arduino Mini** via une **liaison série **.  
+Le **Raspberry Pi 3** communique avec l’**Arduino Mini** via une **liaison série**.  
 L’Arduino reçoit les instructions de distribution et actionne les pompes en conséquence.
 
 ---
@@ -60,5 +60,5 @@ L’Arduino reçoit les instructions de distribution et actionne les pompes en c
 ## 📅 Statut
 
 🛠️ Projet actuellement **en cours de développement**.
-
+Incroyable ce projet !!!
 ---
