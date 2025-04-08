@@ -60,5 +60,7 @@ L’Arduino reçoit les instructions de distribution et actionne les pompes en c
 ## 📅 Statut
 
 🛠️ Projet actuellement **en cours de développement**.
-Incroyable ce projet !!!
+
+🎉 Incroyable ce projet !!!
 ---
+
