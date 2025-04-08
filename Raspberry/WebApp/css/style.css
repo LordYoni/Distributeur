@@ -5,9 +5,12 @@
 }
 
 body {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
+}
+img {
+  min-width: 400px;
 }
 
 .container {
@@ -31,16 +34,16 @@ body {
   align-items: center;
   font-size: 40px;
   font-weight: 700;
-  color: #2B2D42;
+  color: #2b2d42;
   text-align: center;
 }
 
 .boisson {
-  background-color: #FFAFCC;
+  background-color: #ffafcc;
 }
 
 .cocktail {
-  background-color: #BDE0FE;
+  background-color: #bde0fe;
 }
 
 /* Content */
@@ -68,6 +71,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
@@ -79,7 +83,7 @@ body {
 .card p {
   font-size: 32px;
   font-weight: 275;
-  color: #2B2D42;
+  color: #2b2d42;
 }
 
 .card.red {
