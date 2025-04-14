@@ -26,7 +26,7 @@
  * - "V30P4" signifie : Distribuer 30% du volume à la pompe 4.
  *
  * Le volume est exprimé en pourcentage, avec 100% correspondant à la durée maximale de remplissage
- * de 5 secondes (²à définir) (dureeMaxRemplissage). Le programme peut traiter plusieurs commandes successivement,
+ * de 5 secondes (à définir) (dureeMaxRemplissage). Le programme peut traiter plusieurs commandes successivement,
  * en s'assurant de toujours arrêter toutes les pompes après chaque activation.
  */
 
@@ -35,7 +35,7 @@
 #define LONGUEUR_MIN_COMMANDE 4
 #define NOMBRE_DE_POMPES 6
 
-Moteur moteur1 = Moteur(6,7);
+Moteur moteur1 = Moteur(6, 7);
 
 void setup()
 {

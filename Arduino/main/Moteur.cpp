@@ -34,7 +34,7 @@ void Moteur::allumer_moteur(direction direction, uint16_t time)
         default:
             break;
     }
-    
+
     m_temps_arret = time + millis();
 
 }

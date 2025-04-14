@@ -26,7 +26,7 @@ public:
 
     /**
      * Allume le moteur
-     * 
+     *
      * @param direction La direction du moteur
      * @param time Temps pendant lequel le moteur restera allumé (en ms)
      */
