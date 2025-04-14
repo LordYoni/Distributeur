@@ -48,6 +48,8 @@ void loop()
 {
     if(Serial.available() > LONGUEUR_MIN_COMMANDE)
     {
+         delay(10); // FIXME classe Trame
+ 
         /**
          * uint16_t car le maximum représentable en décimal sur 3 chiffres est 999 et
          * 999 > 255 donc on évite un éventuel faux positif à cause d'un overflow.
@@ -57,12 +59,11 @@ void loop()
 
         if(Serial.read() == 'V')
         {
-            uint8_t i = 0;
-
-            while(isdigit(Serial.peek()) && i++ < 3)
+             for(uint8_t i = 0; i < 3; i++)
+                 if(isDigit(Serial.peek()))
                 volume = volume * 10 + (uint8_t)Serial.read() - '0';
-
-            if(volume <= 100 && Serial.peek() == 'P')
+                 else
+                     break;
             {
                 Serial.read();
 
@@ -78,6 +79,9 @@ void loop()
                         Serial.print(F("%\nPompe: "));
                         Serial.println(pompe);
                         Serial.println();
+ 
+                         if(pompe == 1)
+                             moteur1.allumer_moteur(direction::AVANT, volume * 100);
                     }
                 }
             }
