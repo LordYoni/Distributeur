@@ -13,75 +13,64 @@
     <title>Jeffrey</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="fr">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Distributeur</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <div class="admin-container">
-          <aside class="sidebar">
-            <h1>JEFFREY</h1>
-            <nav>
-              <ul>
-                <li><a href="#">WebApp</a></li>
-                <li>
-                  <a href="#">phpmyadmin</a>
-                </li>
-              </ul>
-            </nav>
-          </aside>
-          <main class="admin-content">
-            <section class="admin-section boisson">
-              <h1>Boisson</h1>
-              <form class="boisson-form">
-                <label for="boisson-name">Nom de la boisson :</label>
-                <input type="text" id="boisson-name" name="boisson-name" placeholder="Entrez le nom de la boisson" />
-                <br>
-                <label for="boisson-image">Image de la boisson :</label>
-                <input type="file" id="boisson-image" name="boisson-image" accept="image/*" />
-                <br>
-                <label for="boisson-color">Couleur de la boisson :</label>
-                <input type="color" id="boisson-color" name="boisson-color" />
-                <br>
-                <button type="submit">Ajouter</button>
-              </form>
-            </section>
-            <section class="admin-section cocktail">
-              <h1>Cocktail</h1>
-              <form class="cocktail-form">
-                <label for="cocktail-name">Nom du cocktail :</label>
-                <input type="text" id="cocktail-name" name="cocktail-name" placeholder="Entrez le nom du cocktail" />
-                <br>
-                <label for="cocktail-image">Image du cocktail :</label>
-                <input type="file" id="cocktail-image" name="cocktail-image" accept="image/*" />
-                <br>
-                <label for="cocktail-color">Couleur du cocktail :</label>
-                <input type="color" id="cocktail-color" name="cocktail-color" />
-                <br>
-                <label for="cocktail-ingredients">Ingrédients :</label>
-                <select name="cocktail-ingredients" id="cocktail-ingredients">
-                  <option value="ingredient1">Ingrédient 1</option>
-                  <option value="ingredient2">Ingrédient 2</option>
-                  <option value="ingredient3">Ingrédient 3</option>
-                  <option value="ingredient4">Ingrédient 4</option>
-                </select>
-                <input type="number" name="cocktail-ingredients-value" id="cocktail-ingredients-value" min="0" max="100" step="1" value="0" />
-                <br>
-                <button type="submit">Ajouter</button>
-              </form>
-            </section>
-            <section class="admin-section configuration">
-              <h1>Configuration</h1>
-            </section>
-          </main>
-        </div>
-        <script src="script/script.js"></script>
-      </body>
-    </html>
-
+    <div class="admin-container">
+      <aside class="sidebar">
+        <h1>JEFFREY</h1>
+        <nav>
+          <ul>
+            <li><a href="#">WebApp</a></li>
+            <li><a href="#">phpmyadmin</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="admin-content">
+        <section class="admin-section boisson">
+          <h1>Boisson</h1>
+          <form class="boisson-form">
+            <label for="boisson-name">Nom de la boisson :</label>
+            <input type="text" id="boisson-name" name="boisson-name" placeholder="Entrez le nom de la boisson" />
+            <br>
+            <label for="boisson-image">Image de la boisson :</label>
+            <input type="file" id="boisson-image" name="boisson-image" accept="image/*" />
+            <br>
+            <label for="boisson-color">Couleur de la boisson :</label>
+            <input type="color" id="boisson-color" name="boisson-color" />
+            <br>
+            <button type="submit">Ajouter</button>
+          </form>
+        </section>
+        <section class="admin-section cocktail">
+          <h1>Cocktail</h1>
+          <form class="cocktail-form">
+            <label for="cocktail-name">Nom du cocktail :</label>
+            <input type="text" id="cocktail-name" name="cocktail-name" placeholder="Entrez le nom du cocktail" />
+            <br>
+            <label for="cocktail-image">Image du cocktail :</label>
+            <input type="file" id="cocktail-image" name="cocktail-image" accept="image/*" />
+            <br>
+            <label for="cocktail-color">Couleur du cocktail :</label>
+            <input type="color" id="cocktail-color" name="cocktail-color" />
+            <br>
+            <label for="cocktail-ingredients">Ingrédients :</label>
+            <select name="cocktail-ingredients" id="cocktail-ingredients">
+              <option value="ingredient1">Ingrédient 1</option>
+              <option value="ingredient2">Ingrédient 2</option>
+              <option value="ingredient3">Ingrédient 3</option>
+              <option value="ingredient4">Ingrédient 4</option>
+              <option value="ingredient5">Ingrédient 5</option>
+              <option value="ingredient6">Ingrédient 6</option>
+            </select>
+            <input type="number" name="cocktail-ingredients-value" id="cocktail-ingredients-value" min="0" max="100" step="1" value="0" />
+            <br>
+            <button type="submit">Ajouter</button>
+          </form>
+        </section>
+        <section class="admin-section configuration">
+          <h1>Configuration</h1>
+        </section>
+      </main>
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>

@@ -9,59 +9,48 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Yoni, Thomas, Zakariya, Eliot" />
-    <link rel="icon" href="img/logo.png" />
+    <link rel="icon" href="img/clubelec_black.svg" />
     <title>Jeffrey</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="fr">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Distributeur</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <div class="container">
-          <aside class="sidebar">
-            <div class="menu boisson">BOISSON</div>
-            <div class="menu cocktail">COCKTAIL</div>
-          </aside>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="menu boisson">BOISSONS</div>
+        <div class="menu cocktail">COCKTAILS</div>
+      </aside>
 
-          <main class="content">
-            <section class="row">
-              <div class="card red">
-                <img src="img/drpeper.webp" alt="DrPepper" />
-                <p>DrPepper</p>
-              </div>
-              <div class="card red">
-                <img src="img/oasis.webp" alt="Oasis" />
-                <p>Oasis</p>
-              </div>
-              <div class="card red">
-                <img src="img/lipton.webp" alt="Ice Tea" />
-                <p>Ice Tea</p>
-              </div>
-            </section>
-
-            <section class="row">
-              <div class="card beige">
-                <img src="img/borabora.webp" alt="Bora Bora" />
-                <p>Bora Bora</p>
-              </div>
-              <div class="card beige">
-                <img src="img/PinaColada.webp" alt="Piña Colada" />
-                <p>Piña Colada</p>
-              </div>
-              <div class="card beige">
-                <img src="img/koyo.webp" alt="Blue Lagoon" />
-                <p>Blue Lagoon</p>
-              </div>
-            </section>
-          </main>
-        </div>
-      </body>
-    </html>
-
-    <script src="script/script.js"></script>
+      <main class="content">
+        <section class="row">
+          <div class="card red" id="V63P3">
+            <img src="img/drpeper.webp" alt="DrPepper" />
+            <p>DrPepper</p>
+          </div>
+          <div class="card red" id="V50P5">
+            <img src="img/oasis.webp" alt="Oasis" />
+            <p>Oasis</p>
+          </div>
+          <div class="card red" id="V75P3">
+            <img src="img/lipton.webp" alt="Ice Tea" />
+            <p>Ice Tea</p>
+          </div>
+        </section>
+        <section class="row">
+          <div class="card beige" id="">
+            <img src="img/borabora.webp" alt="Bora Bora" />
+            <p>Bora Bora</p>
+          </div>
+          <div class="card beige" id="">
+            <img src="img/PinaColada.webp" alt="Piña Colada" />
+            <p>Piña Colada</p>
+          </div>
+          <div class="card beige" id="">
+            <img src="img/koyo.webp" alt="Blue Lagoon" />
+            <p>Blue Lagoon</p>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script/script.js"></script>
 </html>

@@ -31,6 +31,9 @@
  */
 
 #include "Moteur.h"
+#include "lib.h"
+
+LedMatrix led = LedMatrix();
 
 #define LONGUEUR_MIN_COMMANDE 4
 #define NOMBRE_DE_POMPES 6
@@ -40,8 +43,8 @@ Moteur moteur1 = Moteur(6, 7);
 void setup()
 {
     Serial.begin(9600);
-    delay(1000);
-    moteur1.allumer_moteur(direction::AVANT, 1000);
+
+    led.turn_on();
 }
 
 void loop()
@@ -74,12 +77,17 @@ void loop()
                     if(pompe <= NOMBRE_DE_POMPES)
                     {
                         //commande pompe
+                        /*
                         Serial.print(F("Volume: "));
                         Serial.print(volume);
                         Serial.print(F("%\nPompe: "));
                         Serial.println(pompe);
                         Serial.println();
- 
+                        */
+                        led.upd_row(0, pompe);
+                        led.upd_row(1, volume);
+
+
                          if(pompe == 1)
                              moteur1.allumer_moteur(direction::AVANT, volume * 100);
                     }

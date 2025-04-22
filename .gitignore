@@ -1,1 +1,7 @@
-.vscode/
+vscode/
+Raspberry/node_modules/
+Raspberry/package-lock.json
+Raspberry/package.json
+Arduino/main/lib.h
+Arduino/main/lib.cpp 
+
